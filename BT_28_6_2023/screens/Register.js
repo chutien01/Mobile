@@ -3,11 +3,40 @@ import React, { useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { TextInput } from "react-native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Register = ({navigation}) => {
-  const [name, setName] = useState(null)
-  const [email, setEmail] = useState(null);
-  const [password, setPassword] = useState(null);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+
+  const handleRegister = async () => {
+    try {
+        if (name === '' || email === '' || password === '' || confirmPassword === '') {
+            alert('Vui lòng nhập đầy đủ thông tin')
+        }
+        else {
+            if (password === confirmPassword) {
+                await AsyncStorage.setItem('currentUser', JSON.stringify({
+                    name: name,
+                    email: email,
+                    password: password,
+                    confirmPassword: confirmPassword,
+                }))
+
+                navigation.navigate('Login');
+            }
+
+            else {
+                alert('Mật khẩu nhập lại không đúng')
+            }
+        }
+    } catch (error) {
+        alert('Failed to save the data to the storage')
+    }
+}
+
   return (
     <View style={styles.container}>
       <View style={styles.wrapper}>
@@ -32,7 +61,15 @@ const Register = ({navigation}) => {
           secureTextEntry
         ></TextInput>
 
-        <Button title="Register" />
+        <TextInput
+          style={styles.input}
+          value={confirmPassword}
+          placeholder="Confirm password"
+          onChangeText={(text) => setConfirmPassword(text)}
+          secureTextEntry
+        ></TextInput>
+
+        <Button onPress={handleRegister} title="Register" />
 
         <View style={{ flexDirection: "row", marginTop: 20 }}>
           <Text>If I have an account?</Text>
