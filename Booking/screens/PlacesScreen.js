@@ -20,10 +20,10 @@ const PlacesScreen = () => {
   const data = [
     {
       id: "0",
-      place: "Bangalore",
+      place: "TP. Hà Nội",
       placeImage:
-        "https://images.pexels.com/photos/7630190/pexels-photo-7630190.jpeg?auto=compress&cs=tinysrgb&w=800",
-      shortDescription: "City in Karnataka, India",
+        "https://i1-english.vnecdn.net/2023/02/24/hanoi2165233875536321652338809-5791-3494-1677201276.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=qC2hFxsVcSGPVHlUlbTW2g",
+      shortDescription: "Thủ đô Hà Nội, Việt Nam",
       properties: [
         {
           id: "10",
@@ -32,7 +32,7 @@ const PlacesScreen = () => {
             "https://cf.bstatic.com/xdata/images/hotel/max1280x900/433845616.jpg?k=87bc315f35830189d9a1c935c3e167e648543c27f39ee4cafc5cf73ee24393b9&o=&hp=1",
           rating: 3.6,
           address:
-            "346, Hennur Main Road, Post, Kalyan Nagar, 560043 Bangalore, India ",
+            "415 Láng Hạ, Cầu Giấy, Hà Nội",
           oldPrice: 4600,
           newPrice: 3312,
           latitude: "21.01848",
@@ -130,10 +130,10 @@ const PlacesScreen = () => {
           id: "11",
           image:
             "https://cf.bstatic.com/xdata/images/hotel/max1280x900/223496641.jpg?k=070266558a879c2926e5511569c4828a007a3e1057b63ccfa30120c859341d1d&o=&hp=1",
-          name: "Regenta Inn Indiranagar Bangalore",
+          name: "Regenta Inn Indiranagar",
           rating: 4,
           address:
-            "648/B, Regenta Inn Indiranagar, Binnamangala 1st stage Indiranagar, 560038 Bangalore, India",
+            "648/B, Cầu giấy, Hà Nội",
           oldPrice: 4201,
           newPrice: 3327,
           latitude: "20.999806683982726",
@@ -222,7 +222,7 @@ const PlacesScreen = () => {
           name: "Bloom Hotel - Bengaluru Airport",
           rating: 4.2,
           address:
-            "Down Town Park, Sadahalli Gate, Kempegowda Int'l Airport Rd, 562157 Bangalore, India",
+            "Mỹ đình, Cầu Giấy, Hà Nội",
           oldPrice: 3800,
           newPrice: 3078,
           latitude: "20.99722888289063",
@@ -307,19 +307,21 @@ const PlacesScreen = () => {
     },
     {
       id: "2",
-      place: "Hyderabad",
+      place: "TP. Hồ Chí Minh",
       placeImage:
-        "https://images.pexels.com/photos/9373357/pexels-photo-9373357.jpeg?auto=compress&cs=tinysrgb&w=800",
-      shortDescription: "City in Telangana, India",
+        "https://i.ex-cdn.com/vovgiaothong.vn/files/f1/Sites/1/media/hoanganh/images/1(2).jpg",
+      shortDescription: "Thành Phố Hồ Chí Minh, Việt Nam",
       properties: [
         {
           id: "20",
-          name: "FabExpress Airport Stay Inn",
+          name: "OYO 257 Quang Trung",
           rating: 3.5,
           address:
-            "CFC-4/C, Road No-2 Hardware Park, Beside TCS, Tukkuguda, 501351 Hyderabad, India",
+            "257 Quang Trung, Hồ Chí Minh",
           oldPrice: 4332,
           newPrice: 3200,
+          latitude: "10.842760721440929",
+          longitude: "106.6434089624815",
           photos: [
             {
               id: "140",
@@ -375,7 +377,7 @@ const PlacesScreen = () => {
           rooms: [
             {
               id: "202",
-              name: "King Room with Balcony",
+              name: "King Room with OYO",
               size: 419,
               refundable: "refundable",
               payment: "Pay at the property",
@@ -401,12 +403,14 @@ const PlacesScreen = () => {
         },
         {
           id: "22",
-          name: "Olive Service Apartments",
+          name: "HANZ T68",
           rating: 4.5,
           address:
-            "Plot 73, Shilpi Valley, Gafoor Nagar, Madhapur, Opp Hitech City Mindspace, Hyderabad",
+            "Phường 8 Gò Vấp, Hồ Chí Minh",
           oldPrice: 5200,
           newPrice: 4100,
+          latitude: "10.844464371352574",
+          longitude: "106.64704402648397",
           photos: [
             {
               id: "160",

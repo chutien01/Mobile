@@ -135,7 +135,7 @@ const HomeScreen = () => {
               <Feather name="search" size={24} color="black" />
               <TextInput
                 placeholderTextColor="black"
-                placeholder={route?.params ? route.params.input : "Nhập thông tin bạn cần tìm"}
+                placeholder={route?.params ? route.params.input : "Nhập thông tin thành phố"}
               />
             </Pressable>
 

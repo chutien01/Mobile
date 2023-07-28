@@ -23,6 +23,7 @@ import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import { MaterialIcons } from '@expo/vector-icons';
 import InfoSavedScreen from './screens/InfoSavedScreen';
+import IntroSlider from './screens/IntroSlider';
 
 const StackNavigator = () => {
     const Tab = createBottomTabNavigator();
@@ -81,6 +82,7 @@ const StackNavigator = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator>
+                <Stack.Screen name="Onbroad" component={IntroSlider}  options={{headerShown: false}}/>
                 <Stack.Screen name="Login" component={LoginScreen}  options={{headerShown: false}}/>
                 <Stack.Screen name="Register" component={RegisterScreen}  options={{headerShown: false}}/>
                 <Stack.Screen name="Main" component={BottomTabs}  options={{headerShown: false}}/>

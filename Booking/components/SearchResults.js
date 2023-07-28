@@ -24,7 +24,7 @@ const SearchResults = ({data, input, setInput}) => {
                     <View style={{marginLeft: 10}}>
                         <Text style={{fontSize:15,fontWeight:"500"}}>{item.place}</Text>
                         <Text style={{marginVertical:4}}>{item.shortDescription}</Text>
-                        <Text style={{color:"gray",fontSize:15}}>{item.properties.length} Properties</Text>
+                        <Text style={{color:"gray",fontSize:15}}>Có {item.properties.length} Địa điểm</Text>
                     </View>
                 </Pressable>
             )
